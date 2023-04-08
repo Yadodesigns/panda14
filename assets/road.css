@@ -1,0 +1,41 @@
+.center .inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    position: relative;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.main-cont{
+    height: 100%;
+}
+.center{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+}
+.center .numbers{
+    position: absolute;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+}
+.center .numbers h1{
+    font-size: 120%;
+    color: rgb(160, 160, 160);
+}
+.center .inner .box{
+    width: 50%;
+}

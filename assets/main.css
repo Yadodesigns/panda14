@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-cont{
+    opacity: 0;
+    animation: fade-in 800ms ease-in-out;
+    animation-fill-mode: forwards;  
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@font-face {
+    font-family: 'RX100-Regular';
+    src: url('../fonts/RX100-Regular.woff2') format('woff2'),
+         url('../fonts/RX100-Regular.woff') format('woff'),
+         url('../fonts/RX100-Regular.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+body{
+    background-color: #0a0a0a;
+    color: #FFFF;
+    font-family: 'RX100-Regular';
+    font-weight: 300;
+}
+.nav-outer{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-outer .inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-outer img{
+    animation: spin 5s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.nav-outer .right .grid ul{
+    display: flex;
+}
+.nav-outer .right .grid ul li{
+    list-style: none;
+    text-decoration: none;
+    color: #FFFF;
+    padding: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    opacity: 50%;
+    font-size: 80%;
+}
+.nav-outer .right li:hover{
+    background-color: rgba(240, 248, 255, 0.158);
+
+}
+.nav-outer .right .grid a{
+    text-decoration: none;
+}
+#color{
+    background-color: rgba(240, 248, 255, 0.158);
+    opacity: 100%;
+}
+.footer-outer{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer-outer .inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer-outer img{
+    width: 120%;
+}
+.footer-outer ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.footer-outer .left-inner h2{
+    opacity: 50%;
+    font-size: 80%;
+}
